@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tool tip</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .tool{
+            border: 1px solid gray;
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+        }
+        .icon{
+            display: inline-block;
+            border: 1px solid black;
+            width: 10px;
+            height: 10px;
+        }
+        .message-box{
+            display: inline-block;
+            border: 1px solid blue;
+            position: absolute;
+            bottom: 12px;
+            z-index: 7;
+            min-width: 300px;
+            background-color: white;
+        }
+        .sp{
+            height: 100px;
+        }
+        p{
+            display: inline-block;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sp"></div>
+
+    <!-- <div class="tool">
+        <div class="icon"></div>
+        <div class="message-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, molestiae vitae. Aliquid repellat in, debitis sunt ullam vero minus illo amet id ipsa distinctio laboriosam eum non ea maiores nulla. Lorem ipsum dolor sit amet, debitis blanditiis fuga vero quae asperiores ipsum assumenda illo, nisi sit, nam at hic repellat quod recusandae ut maiores optio.</obcaecati></div>
+    </div> -->
+
+    <info-tip width="20" color="blue"><span slot="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam ullam in eveniet ratione tempore fuga, hic quae et necessitatibus nobis, quia sed totam nulla. Enim quisquam vitae fugiat perspiciatis?</span></info-tip>
+    <p class="ttt">tho</p><info-tip><span slot="message">the message to be displayed. </span></info-tip>
+
+    <script src="info-tip.js"></script>
+</body>
+</html>
